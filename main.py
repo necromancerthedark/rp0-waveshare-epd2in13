@@ -9,7 +9,6 @@ from font_fredoka_one import FredokaOne
 import time
 import traceback
 
-
 # Set current directory
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,8 +27,6 @@ def getApi(epd):
       ratioblocked = float(parsed_json['ads_percentage_today'])
       status = parsed_json['status']
       f.close()
-
-
 
     # Init Screen
       logging.info("init and Clear")
